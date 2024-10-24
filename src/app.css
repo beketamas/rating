@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%); 
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Star-background : hsl(219, 13%, 24%);
+}
+
+body{
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--Dark-Blue);
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.star{
+    width: 40px;
+    height: 40px;
+    background-color: var(--Star-background);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+p{
+    color: var(--Light-Grey);
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.buttonContainer button{
+    width: 40px;
+    height: 40px;background-color: var(--Star-background);
+    color: var(--Light-Grey);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.buttonContainer button:hover{
+    background-color: var(--White);
+    color: var(--Star-background);
+}
+
+.buttonContainer button:focus{
+    background-color: var(--Orange);
+    color: var(--Star-background);
+}
+
+.submit{
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px;
+    border: none;background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-spacing-trim: 10px;
+    letter-spacing: 2px;
+}
+
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Star-background);
+    cursor: pointer;
+}
+
+.thankYou{
+    text-align: center;
+}
+
+.thankYou img{
+    margin-bottom: 15px;
+}
+
+.selectedRate{
+    background-color: var(--Star-background);
+    padding: 0.6rem 2rem;
+    display: block;
+    color: var(--Orange);
+    border-radius: 1rem;
+}
+
+
+.thankYou h1{
+    margin-bottom: 15px;
+}
